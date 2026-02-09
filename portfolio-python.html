@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume - Personal Bootstrap Template</title>
+  <title>Portfolio Details - Personal Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="resume-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -51,8 +51,9 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
+          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -69,7 +70,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Resume</h1>
+              <h1>Portfolio Details</h1>
               <p class="mb-0"></p>
             </div>
           </div>
@@ -79,88 +80,68 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Resume</li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row">
+        <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
 
-            <div class="resume-item pb-0">
-              <h4>Aicha Ghanam</h4>
-              <p><em>Analytical and data-driven professional skilled in data analysis, modelling, and visualization, with a strong focus on transforming data into actionable insights to support decision-making and improvement.</em></p>
-              <ul>
-                <li>Thomson Street,Ottawa, ON</li>
-                <li>(873) 288-3333</li>
-                <li>aichaghanam22@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Ontario College Diploma in Applied Data Science </h4>
-              <h5>2024 - 2026</h5>
-              <p><em>University of Valenciennes</em></p>
-              <p>Specialized in data analysis, statistical modeling, and machine learning.
-Gained hands-on experience in Python, R, SQL, and Power BI for real-world data projects.
-Developed predictive models, data pipelines, and dashboards to support data-driven decision-making.</p>
-            </div><!-- Edn Resume Item -->
+              <div class="swiper-wrapper align-items-center">
 
-            <div class="resume-item">
-              <h4>Master’s degree in Quality, Safety, and Environment Ontario College Diploma in Applied Data Science</h4>
-              <h5> 2008 - 2010</h5>
-              <p><em>La Cité College - Ottawa, Canada</em></p>
-              <p>Focused on risk management, process optimization, and performance improvement.
-Applied analytical methods to evaluate operational efficiency and improve quality standards.
-Developed strong problem-solving and structured thinking skills applicable to data analysis and business strategy.</p>
-            </div><!-- Edn Resume Item -->
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-7.webp" alt="">
+                </div>
 
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Social media data analyst intern</h4>
-              <h5>May 2025 , August 2025</h5>
-              <p><em>Les Éditions Muzikiddy, Montréal, Québec </em></p>
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
               <ul>
-                <li>Collect and clean data from multiple social platforms (Instagram, YouTube, Facebook, TikTok)</li>
-                <li>Develop and maintain automated dashboards and analytical reports using Power BI and Excel </li>
-                <li>Identify trends and provide insights and recommendations to support marketing strategy</li>
-                <li>Analyze engagement metrics (likes, comments, shares, reach, impressions) </li>
+                <li><strong>Category</strong>: Python</li>
+                <li><strong>Project date</strong>: January 16, 2025</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/aichaghanam/bank-marketing-ml">Lien GitHub</a></li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Production planner</h4>
-              <h5>January 2013 to April 2022</h5>
-              <p><em>RENAULT Group - Casablanca, Morocco</em></p>
-              <ul>
-                <li>Create and update production plans based on capacity, priorities, and supply data</li>
-                <li>Follow production orders and identify possible delays</li>
-                <li>Monitor and analyze key indicators KPIs (costs, deadlines, stock levels) to support data-driven decisions and optimize inventory levels</li>
-                <li>Interpret production data outputs and provide recommendations to senior management </li>
-                <li>Manage action plans and suggest improvements to make processes more efficient </li>
-                <li>Validate production data and ensure accuracy across teams using Excel and ERP tools </li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>About Project</h2>
+              <p>
+                This Bank Marketing ML Pipeline project focuses on building an end-to-end machine learning solution to predict client subscription to term deposits. It integrates data preprocessing, feature engineering, model training, and evaluation using Python and scikit-learn to deliver a structured and efficient predictive system.
+              </p>
+            </div>
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Resume Section -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 
@@ -169,8 +150,11 @@ Developed strong problem-solving and structured thinking skills applicable to da
       <h3 class="sitename">Personal</h3>
       <p></p>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/aichaghanam"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/aicha-ghanam2/"><i class="bi bi-linkedin"></i></a>
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
